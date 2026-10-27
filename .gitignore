@@ -1,0 +1,48 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Credentials and local cloud configuration
+.aws/
+credentials
+*.pem
+*.key
+
+# Models, caches, and datasets
+work/
+hf-cache/
+huggingface/
+models--*/
+datasets--*/
+*.arrow
+*.parquet
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Generated experiment artifacts
+assignments/imageclef-test-time-scaling/environment/
+assignments/imageclef-test-time-scaling/examples/
+assignments/imageclef-test-time-scaling/logs/
+assignments/imageclef-test-time-scaling/subset/
+assignments/imageclef-test-time-scaling/teardown/
+assignments/imageclef-test-time-scaling/notebook-run*/
+assignments/imageclef-test-time-scaling/results/*
+!assignments/imageclef-test-time-scaling/results/aggregate-results.csv
+!assignments/imageclef-test-time-scaling/results/by-language-aggregate.csv
+
+# Dataset-derived media and presentation files
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.pptx

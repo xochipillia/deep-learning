@@ -1,0 +1,24 @@
+{
+  "note": "Reference values reported by the authors on the FULL EXAMS-V validation split (n=4,651), not on the 200-question subset used here. They are context, not targets: subset results have wide confidence intervals.",
+  "sources": {
+    "overall": "Official repository README, 'Paper result to config mapping' (commit 2247c130), Table 1 rows for Qwen3.5-4B",
+    "by_language": "arXiv:2607.09438 (HTML version), Appendix G, Table 10, columns 'Q3.5 SC' 1k and 2k (SC N=8)"
+  },
+  "overall_accuracy_pct": {
+    "zero-shot": 57.1,
+    "self-consistency-1k": 77.8,
+    "self-consistency-2k": 81.5,
+    "guided-repair": null
+  },
+  "by_language_accuracy_pct": {
+    "self-consistency-1k": {"Arabic": 71.8, "Bulgarian": 92.0, "Chinese": 66.2, "Croatian": 84.6, "English": 56.2,
+                            "French": 92.0, "German": 84.9, "Hungarian": 77.9, "Italian": 81.9, "Polish": 55.0,
+                            "Serbian": 83.3},
+    "self-consistency-2k": {"Arabic": 74.5, "Bulgarian": 93.5, "Chinese": 74.7, "Croatian": 86.0, "English": 73.5,
+                            "French": 92.0, "German": 86.4, "Hungarian": 80.0, "Italian": 83.3, "Polish": 57.0,
+                            "Serbian": 84.7}
+  },
+  "by_language_n_full_validation": {"Arabic": 517, "Bulgarian": 400, "Chinese": 600, "Croatian": 585, "English": 347,
+                                    "French": 224, "German": 279, "Hungarian": 535, "Italian": 562, "Polish": 100,
+                                    "Serbian": 502}
+}
